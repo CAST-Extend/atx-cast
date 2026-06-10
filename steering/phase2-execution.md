@@ -81,7 +81,7 @@ atx custom def exec \
   "mcpServers": {
     "cast-imaging": {
       "type": "http",
-      "url": "https://castimaging.io/imaging/mcp/",
+      "url": "<cast_imaging_mcp_url>",
       "headers": {
         "x-api-key": "${input:imaging-key}"
       }
