@@ -29,20 +29,19 @@ Before doing anything else, check whether the CAST Imaging MCP server is configu
 
 3. Once the user provides their credentials, instruct them to add the CAST Imaging MCP server to their Kiro MCP configuration (`.kiro/settings/mcp.json` or `~/.kiro/settings/mcp.json`):
 
-   ```json
+```json
    {
-     "mcpServers": {
-       "cast-imaging": {
-         "command": "uvx",
-         "args": ["cast-imaging-mcp-server@latest"],
-         "env": {
-           "CAST_IMAGING_URL": "<user-provided-url>",
-           "CAST_IMAGING_API_KEY": "<user-provided-api-key>"
-         }
-       }
-     }
-   }
-   ```
+  "mcpServers": {
+    "cast-imaging": {
+      "type": "http",
+      "url": "https://castimaging.io/imaging/mcp/",
+      "headers": {
+        "x-api-key": "${input:imaging-key}"
+      }
+    }
+  }
+}
+```
 
 4. After configuration, retry the `applications` call to confirm the connection is working
 5. **If the call succeeds on the first attempt**, skip this step and proceed directly to Step 1
