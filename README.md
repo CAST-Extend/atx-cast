@@ -26,7 +26,8 @@ No code changes happen in Phase 1 — it's purely analytical. Human review happe
 
 - **Kiro IDE** — [kiro.dev](https://kiro.dev)
 - **CAST Imaging instance** — With at least one application analysed
-- **CAST Imaging API key** — For MCP server authentication
+- **CAST Imaging API key** — For Imaging authentication
+- **CAST Imaging MCP Server** — For MCP server authentication
 - **AWS CLI** — Configured with `AWSTransformCustomFullAccess` IAM policy (for Phase 2)
 - **ATX CLI** — AWS Transform Custom CLI installed (for Phase 2)
 
