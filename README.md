@@ -45,7 +45,7 @@ The power requires the CAST Imaging MCP server to be configured. Add this to you
   "mcpServers": {
     "cast-imaging": {
       "type": "http",
-      "url": "https://castimaging.io/imaging/mcp/",
+      "url": "<cast_imaging_mcp_url>",
       "headers": {
         "x-api-key": "${input:imaging-key}"
       }
