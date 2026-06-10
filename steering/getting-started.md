@@ -22,7 +22,7 @@ Before doing anything else, check whether the CAST Imaging MCP server is configu
 
    Ask the user:
    > "I need your CAST Imaging connection details to proceed. Please provide:
-   > 1. **CAST Imaging MCP URL** — the base URL of your CAST Imaging instance (e.g., `https://imaging.example.com`)
+   > 1. **CAST Imaging MCP URL** — the base URL of your CAST Imaging mcp instance (e.g., `https://imaging.example.com/mcp`)
    > 2. **CAST Imaging API Key** — your API key for authenticating with the CAST Imaging REST API
    >
    > These credentials are used to connect to the CAST Imaging MCP server. They are only stored in your local MCP configuration and are never sent anywhere else."
