@@ -73,11 +73,10 @@ atx custom def exec \
 {
   "mcpServers": {
     "cast-imaging": {
-      "command": "uvx",
-      "args": ["cast-imaging-mcp-server@latest"],
-      "env": {
-        "CAST_IMAGING_URL": "<your-instance-url>",
-        "CAST_IMAGING_API_KEY": "<your-api-key>"
+      "type": "http",
+      "url": "https://castimaging.io/imaging/mcp/",
+      "headers": {
+        "x-api-key": "${input:imaging-key}"
       }
     }
   }
