@@ -45,11 +45,10 @@ The power requires the CAST Imaging MCP server to be configured. Add this to you
 {
   "mcpServers": {
     "cast-imaging": {
-      "command": "uvx",
-      "args": ["cast-imaging-mcp-server@latest"],
-      "env": {
-        "CAST_IMAGING_URL": "<your-cast-imaging-instance-url>",
-        "CAST_IMAGING_API_KEY": "<your-api-key>"
+      "type": "http",
+      "url": "https://castimaging.io/imaging/mcp/",
+      "headers": {
+        "x-api-key": "${input:imaging-key}"
       }
     }
   }
