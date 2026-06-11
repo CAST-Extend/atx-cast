@@ -146,8 +146,8 @@ During execution, the transformation agent uses CAST Imaging MCP to:
 
 ## License
 
-[Add your license here]
+This project is licensed under the MIT License.
 
 ## Contributing
 
-[Add contribution guidelines here]
+Contributions are welcome. Please open an issue or submit a pull request on the [CAST-Extend/atx-cast](https://github.com/CAST-Extend/atx-cast) repository.
